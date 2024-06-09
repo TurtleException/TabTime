@@ -10,6 +10,8 @@
 This simple spigot plugin displays the current in-game time (interpreted as 24-hour time) and weather in the player-list
 (`TAB` key by default) for each current world of any player.
 
+Please note that this plugin will not be compatible with any other plugin that uses the bottom text of the player list.
+
 <img src=".github/example-day.png" alt="The plugin displays a sun during the day, if the weather is clear">
 <img src=".github/example-night.png" alt="During a clear night, a moon is shown next to the time">
 <img src=".github/example-rain.png" alt="Rain is displayed as an umbrella">
