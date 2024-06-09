@@ -21,17 +21,21 @@ public class TabTime extends JavaPlugin {
     }
 
     public static String toTime(World world) {
-        int hours   = (int) ((world.getTime() / 1000 + 6) % 24);
-        int minutes = (int) ((world.getTime() % 1000) / (1000 / 60.0));
+        return toTime(world.getTime(), world.isClearWeather(), world.isThundering());
+    }
+
+    public static String toTime(long time, boolean clearWeather, boolean thundering) {
+        int hours   = (int) ((time / 1000 + 6) % 24);
+        int minutes = (int) ((time % 1000) / (1000 / 60.0));
 
         String weather;
-        if (world.isClearWeather()) {
+        if (clearWeather) {
             if (hours >= 6 & hours < 18) {
                 weather = SYM_SUN;
             } else {
                 weather = SYM_MOON;
             }
-        } else if (world.isThundering()) {
+        } else if (thundering) {
             weather = SYM_THUNDER;
         } else {
             weather = SYM_RAIN;
