@@ -16,3 +16,5 @@ Please note that this plugin will not be compatible with any other plugin that u
 <img src=".github/example-night.png" alt="During a clear night, a moon is shown next to the time">
 <img src=".github/example-rain.png" alt="Rain is displayed as an umbrella">
 <img src=".github/example-thunder.png" alt="When its stormy, a lightning bolt is used">
+<img src=".github/example-nether.png" alt="The nether does not have a time, so it just displays a red skull">
+<img src=".github/example-end.png" alt="Since the end also has no time, it is simply represented by a black star">
