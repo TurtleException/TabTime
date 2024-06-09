@@ -1,0 +1,10 @@
+name: TabTime
+main: de.turtleboi.spigot.tabtime.TabTime
+load: POSTWORLD
+
+version: ${project.version}
+
+api-version: 1.20
+description: ${project.description}
+
+author: TurtleException
