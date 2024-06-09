@@ -6,7 +6,7 @@
 
     <groupId>de.turtleboi.spigot.tabtime</groupId>
     <artifactId>TabTime</artifactId>
-    <version>1.0.12</version>
+    <version>1.0.13</version>
 
     <name>TabTime</name>
     <description>Displays the current (in-game) time in the player list</description>
