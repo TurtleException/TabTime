@@ -10,6 +10,8 @@ public class TabTime extends JavaPlugin {
     public static final String SYM_MOON = "§9\uD83C\uDF19";
     public static final String SYM_RAIN = "§b☂";
     public static final String SYM_THUNDER = "§3⚡";
+    public static final String SYM_NETHER = "§c☠";
+    public static final String SYM_END = "§8\uD83C\uDF1F";
 
     @Override
     public void onEnable() {
@@ -22,6 +24,14 @@ public class TabTime extends JavaPlugin {
     }
 
     public static String toTime(World world) {
+        if (!world.isNatural()) {
+            String suffix = world.isUltraWarm() ? SYM_NETHER : SYM_END;
+            return "§7" + "§k" + "??"
+                    + "§8" + ":"
+                    + "§7" + "§k" + "??"
+                    + " " + suffix;
+        }
+
         return toTime(world.getTime(), world.isClearWeather(), world.isThundering());
     }
 
