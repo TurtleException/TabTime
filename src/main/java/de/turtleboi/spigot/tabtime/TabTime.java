@@ -23,6 +23,12 @@ public class TabTime extends JavaPlugin {
         }, 1, 1);
     }
 
+    /***
+     * Creates a String containing the formatted time and symbol for a {@link World}. The text is formatted as minecraft
+     * legacy text.
+     * @param world The source world for time and weather.
+     * @return Formatted time & symbol text.
+     */
     public static String toTime(World world) {
         if (!world.isNatural()) {
             String suffix = world.isUltraWarm() ? SYM_NETHER : SYM_END;
@@ -35,6 +41,15 @@ public class TabTime extends JavaPlugin {
         return toTime(world.getTime(), world.isClearWeather(), world.isThundering());
     }
 
+    /***
+     * Creates a String containing the formatted time and symbol for a specified time and weather. The text is formatted
+     * as minecraft legacy text.
+     * It is presumed that the source {@link World} of the provided arguments is natural.
+     * @param time The world time.
+     * @param clearWeather true, if the weather is clear.
+     * @param thundering true, if it is thundering.
+     * @return Formatted time & symbol text.
+     */
     public static String toTime(long time, boolean clearWeather, boolean thundering) {
         int hours   = (int) ((time / 1000 + 6) % 24);
         int minutes = (int) ((time % 1000) / (1000 / 60.0));
