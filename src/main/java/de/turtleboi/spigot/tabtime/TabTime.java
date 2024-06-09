@@ -4,6 +4,7 @@ import org.bukkit.World;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
+@SuppressWarnings("unused")
 public class TabTime extends JavaPlugin {
     public static final String SYM_SUN = "§6☀";
     public static final String SYM_MOON = "§9\uD83C\uDF19";
