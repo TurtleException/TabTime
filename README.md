@@ -5,9 +5,9 @@
 <!--suppress HtmlRequiredAltAttribute, CheckImageSize -->
 <img align="right" src=".github/tabtime.png" height="200" width="200">
 
-[![version-shield]](https://github.com/TurtleException/FancyFormat/releases)
+[![version-shield]](https://github.com/TurtleException/TabTime/releases)
 [![license-shield]](LICENSE)
-[![build-shield]](https://github.com/TurtleException/FancyFormat/actions/workflows/build.yaml)
+[![build-shield]](https://github.com/TurtleException/TabTime/actions/workflows/build.yaml)
 
 # TabTime
 This simple spigot plugin displays the current in-game time (interpreted as 24-hour time) and weather in the player-list
