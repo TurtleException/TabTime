@@ -2,6 +2,9 @@
 [license-shield]: https://img.shields.io/github/license/TurtleException/TabTime
 [build-shield]: https://img.shields.io/github/actions/workflow/status/TurtleException/TabTime/build.yaml
 
+<!--suppress HtmlRequiredAltAttribute, CheckImageSize -->
+<img align="right" src=".github/tabtime.png" height="200" width="200">
+
 [![version-shield]](https://github.com/TurtleException/FancyFormat/releases)
 [![license-shield]](LICENSE)
 [![build-shield]](https://github.com/TurtleException/FancyFormat/actions/workflows/build.yaml)
